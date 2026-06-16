@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-import { Logo, LogoMark } from './Logo';
+import { Logo } from './Logo';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -63,24 +63,19 @@ export function Navbar() {
               Schedule a Conversation
             </Link>
 
-            {/* Mobile: logomark + hamburger */}
-            <div className="flex md:hidden items-center gap-3">
-              <div className="relative w-9 h-9">
-                <LogoMark className="w-full h-full" />
-              </div>
-              <button
-                onClick={() => setMobileOpen((prev) => !prev)}
-                aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
-                aria-expanded={mobileOpen}
-                className="w-10 h-10 flex items-center justify-center rounded-lg text-navy hover:bg-navy/5 transition-colors"
-              >
-                {mobileOpen ? (
-                  <X className="w-5 h-5" />
-                ) : (
-                  <Menu className="w-5 h-5" />
-                )}
-              </button>
-            </div>
+            {/* Mobile: hamburger */}
+            <button
+              onClick={() => setMobileOpen((prev) => !prev)}
+              aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={mobileOpen}
+              className="flex md:hidden w-10 h-10 items-center justify-center rounded-lg text-navy hover:bg-navy/5 transition-colors"
+            >
+              {mobileOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
+            </button>
           </div>
         </div>
       </nav>
