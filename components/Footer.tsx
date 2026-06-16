@@ -21,7 +21,7 @@ export function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <div className="mb-6">
-              <Logo />
+              <Logo light />
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-md">
               Executive Search and Leadership Advisory for organizations building high-impact leadership teams.

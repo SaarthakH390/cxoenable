@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     template: '%s | CXOEnable Advisors',
   },
   description: 'Executive Search and Leadership Advisory for organizations building high-impact leadership teams. We help founders, CEOs, and boards make better leadership decisions.',
+  icons: {
+    icon: '/image.png',
+    shortcut: '/image.png',
+    apple: '/image.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
