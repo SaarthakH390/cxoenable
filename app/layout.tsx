@@ -12,9 +12,12 @@ export const metadata: Metadata = {
   },
   description: 'Executive Search and Leadership Advisory for organizations building high-impact leadership teams. We help founders, CEOs, and boards make better leadership decisions.',
   icons: {
-    icon: '/image.png',
-    shortcut: '/image.png',
-    apple: '/image.png',
+    icon: [
+      { url: '/Artboard_2.png', media: '(prefers-color-scheme: light)' },
+      { url: '/Artboard_2_copy.png', media: '(prefers-color-scheme: dark)' },
+    ],
+    shortcut: '/Artboard_2.png',
+    apple: '/Artboard_2.png',
   },
   openGraph: {
     type: 'website',

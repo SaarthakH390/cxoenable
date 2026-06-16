@@ -25,7 +25,7 @@ export function LogoMark({ className = '' }: { className?: string }) {
   return (
     <div className={`relative ${className}`}>
       <Image
-        src="/image.png"
+        src="/Artboard_2.png"
         alt="CXO Enable Advisors mark"
         fill
         className="object-contain"
